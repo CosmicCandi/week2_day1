@@ -25,3 +25,14 @@ class Coffee
   end
 
 end
+
+class Espresso < Coffee
+attr_accessor :coffee_name, :caffeine_amount, :drinks_before_empty
+
+  def initialize (coffee_name, caffeine_amount = 0.41, drinks_before_empty = 1)
+    # self.coffee_name = coffee_name
+    self.caffeine_amount = caffeine_amount
+    self.drinks_before_empty = drinks_before_empty
+
+  end
+end
